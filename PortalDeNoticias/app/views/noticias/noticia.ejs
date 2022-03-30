@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">  
+<meta charset="utf-8">
+ 
+    <head>
+    <title>Notícias - Portal de Notícias</title>
+  
+    </head>
+        <body>
+             <h1>Nóticias</h1>
+                <table>
+                    <tr>
+                        <td>ID</td>
+                        <td>TÍTULO</td>
+                        <td>NOTÍCIA</td>
+                    </tr>
+
+                   <% for(var i=0; i<noticias.length; i++){ %> <!-- para identificar o tamanho da variavel -->
+
+                    <tr>
+                        <td><%=noticias[0].id_noticia%></td> <!--entra 0, depoisconta 1 e continua sempre que estiver dentro do parametro criado-->
+                        <td><%=noticias[0].titulo%></td>
+                        <td><%=noticias[0].noticia%></td>
+                    </tr>
+                    <% } %>
+                 </table>
+        </body>
+    </html>
